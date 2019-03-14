@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Súmula</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Cadastro de Súmula</ion-card-title>
+    </ion-card-header>  
+  </ion-card>
+  <ion-item>
+      <ion-label fixed>Nome Competição:</ion-label>
+      <ion-input type="text" [(ngModel)]="sumula.nomeCompeticao"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Jogo Numero:</ion-label>
+      <ion-input type="text" [(ngModel)]="sumula.jogoNumero"></ion-input>
+      </ion-item>
+      <ion-item>
+      <ion-label fixed>Equipe A:</ion-label>
+      <ion-input type="text" [(ngModel)]="sumula.nomeEquipeA"></ion-input>
+        </ion-item>
+        <ion-item>
+         <ion-label fixed>Equipe B:</ion-label>
+            <ion-input type="text" [(ngModel)]="sumula.EquipeB"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label fixed>Categoria:</ion-label>
+              <ion-input type="text" [(ngModel)]="sumula.categoria"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label fixed>Ginasio:</ion-label>
+                <ion-input type="text" [(ngModel)]="sumula.ginasio"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label fixed>Cidade:</ion-label>
+                  <ion-input type="text" [(ngModel)]="sumula.cidade"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label fixed>Data:</ion-label>
+                    <ion-input type="date" [(ngModel)]="sumula.data"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <button ion-button (click)="movieService.getArbritos()">Cadastrar</button>
+                    </ion-item>
+</ion-content>

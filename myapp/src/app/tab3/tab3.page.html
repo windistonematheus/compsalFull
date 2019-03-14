@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Atleta</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+      <ion-list>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Cadastro de Atleta</ion-card-title>
+      </ion-card-header>  
+    </ion-card>
+    <ion-item>
+      <ion-label fixed>Nome:</ion-label>
+      <ion-input type="text" [(ngModel)]="jogador.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Número Camisa:</ion-label>
+      <ion-input type="text" [(ngModel)]="jogador.numeroCamisa"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Quantidade de Gols:</ion-label>
+      <ion-input type="text" [(ngModel)]="jogador.qtdGols"></ion-input>
+    </ion-item>
+    <ion-item>
+          <ion-label>Capitão</ion-label>
+          <ion-select [(ngModel)]="jogador.isCapitao">
+            <ion-select-option value="false">Não</ion-select-option>
+            <ion-select-option value="true">Sim</ion-select-option>
+          </ion-select>
+        </ion-item>
+    <ion-item>
+      <button ion-button (click)="cadastrar()">Cadastrar</button>
+    </ion-item>
+    </ion-list>
+    </ion-content>
+    
